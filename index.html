@@ -26,7 +26,7 @@
                 Prior to my doctoral studies, I did my Masters in Computer Science at McGill University and Mila, where I was advised by <a href="https://www.cs.mcgill.ca/~dprecup/">Doina Precup</a>.  Before joining my graduate studies, I was a Research Fellow at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research (MSR)</a>, India in Machine Learning and AI team, where I was advised by <a href="https://www.microsoft.com/en-us/research/people/ssrajan/">Dr. Sundararajan Sellamanickam.</a> I worked there on developing a tool for <a href="https://drive.google.com/file/d/0B5fQe-VKhRLgQzhsc1paLUhNSnc/view?usp=sharing">Service Monitoring and Anomaly Diagnostic</a>. I did my Bachelors in Computer Science at <a href="https://iiitd.ac.in/">IIIT-Delhi</a>, India. At IIIT-Delhi, I worked in Image Analysis and Biometrics (IAB) lab, where I was advised by <a href="https://scholar.google.com/citations?user=-DAxp-cAAAAJ&hl=en">Dr. Mayank Vatsa</a> and <a href="https://scholar.google.com/citations?user=okqK5UAAAAAJ&hl=en">Dr. Richa Singh</a>.
               </p>
               <p>
-                Broadly my research interests span reinforcement learning and safety in AI.
+                Broadly my research interests span <strong>reinforcement learning</strong> and <strong>safety in AI</strong>.
               </p>
               <p style="text-align:center">
                 <a href="mailto:arushi.jain@mail.mcgill.ca">Email</a> &nbsp;/&nbsp;
@@ -50,108 +50,157 @@
               </p>
             </td>
           </tr>
-        </tbody></table>
+        </tbody>
+        </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id="nerfbake_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
-                <source src="images/nerfbake_15.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src="./index_files/nerfbake_160.png" width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfbake_start() {
-                  document.getElementById('nerfbake_image').style.opacity = "1";
-                }
-
-                function nerfbake_stop() {
-                  document.getElementById('nerfbake_image').style.opacity = "0";
-                }
-                nerfbake_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://nerf.live/">
-              <papertitle>Baking Neural Radiance Fields for Real-Time View Synthesis</papertitle>
-              </a>
-              <br>
-              <a href="https://phogzone.com/">Peter Hedman</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://www.pauldebevec.com/">Paul Debevec</a>
-              <br>
-              <em>arXiv</em>, 2021 
-              <br>
-              <a href="http://nerf.live/">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2103.14645">arXiv</a>
-              /
-              <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a>
-              /
-              <a href="https://nerf.live/#demos">demo</a>
-              <p></p>
-              <p>Baking a trained NeRF into a sparse voxel grid of colors and features lets you render it in real-time in your browser.</p>
-            </td>
-
-
-          </tr><tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()" bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id="mipnerf_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
-                <source src="images/mipnerf_ipe_yellow.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src="./index_files/mipnerf_ipe_yellow.png" width="160">
-              </div>
-              <script type="text/javascript">
-                function mipnerf_start() {
-                  document.getElementById('mipnerf_image').style.opacity = "1";
-                }
-
-                function mipnerf_stop() {
-                  document.getElementById('mipnerf_image').style.opacity = "0";
-                }
-                mipnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://jonbarron.info/mipnerf">
-                <papertitle>Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <a href="http://matthewtancik.com/">Matthew Tancik</a>, <br>
-              <a href="https://phogzone.com/">Peter Hedman</a>,
-              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-              <br>
-              <em>arXiv</em>, 2021 
-              <br>
-              <a href="http://jonbarron.info/mipnerf">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2103.13415">arXiv</a>
-              /
-              <a href="https://youtu.be/EpH175PY1A0">video</a>
-              <p></p>
-              <p>NeRF is aliased, but we can anti-alias it by casting cones and prefiltering the positional encoding function.</p>
-            </td>
-          </tr> 
-
           <tr>
-            <td style="padding:0px">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/varVPACvsVAAC_TD.png" alt="3DSP" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Variance Penalized On-Policy and Off-Policy Actor-Critic</papertitle>
               <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a href="https://jonbarron.info/">Jon Barron's website.</a>
-              </p>
+              <strong>Arushi Jain</strong>, Gandharv Patil,               Ayush Jain, Khimya Khetarpal, Doina Precup
+              <br>
+              <em>AAAI</em>, 2021 
+              <br>
+              <a href="https://arxiv.org/pdf/2102.01985.pdf">paper</a>
+              /
+              <a href="https://github.com/arushijain94/VariancePenalizedActorCritic">code</a>
+              /
+              <a href="https://virtual.2021.aaai.org/paper_AAAI-10043.html">talk</a>
+              /
+              <a href="https://arushijain94.github.io/data/AAAI_2021_VPAC_Presentation.pdf">slides</a>
+              /              
+              <a href="https://arushijain94.github.io/data/AAAI_2021_Poster_VPAC.pdf">poster</a>
             </td>
           </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/FR_Return_Paper.png" alt="3DSP" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Safe Option-Critic: Learning Safety in the Option-Critic Architecture</papertitle>
+              <br>
+              <strong>Arushi Jain*</strong>, Khimya Khetarpal*, Doina Precup
+              <br>
+              <em>Knowledge Engineering Review (KER) Journal</em>, 2021. (Cambridge University Press Journal) 
+              <br>
+              <em>Adaptive Learning Agents (ALA) Workshop, ICML</em>, 2018.
+              <br>  
+              <a href="https://arxiv.org/pdf/1807.08060.pdf">paper</a>
+              /
+              <a href="https://github.com/arushijain94/SafeOptionCritic">code</a>
+              /
+              <a href="https://arushijain94.github.io/data/slides-safe-option-critic.pdf">slides</a>
+              /              
+              <a href="https://arushijain94.github.io/data/PosterALA2018.pdf">poster</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/thesis.png" alt="3DSP" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Safety using constraint variance in policy-gradient methods</papertitle>
+              <br>
+              <strong>Arushi Jain</strong>
+              <br>
+              <em>Master's thesis, McGill University</em>, March 2020.
+              <br>
+              <a href="https://escholarship.mcgill.ca/concern/theses/ht24wp57p?locale=en">paper</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/AC_SAC.png" alt="3DSP" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Safe Actor-Critic</papertitle>
+              <br>
+              <strong>Arushi Jain*</strong>, Ayush Jain, Doina Precup
+              <br>
+              <em><a href="https://sites.google.com/view/rl-uai2018/schedule?authuser=0">Safety, Risk and Uncertainty in RL Workshop, UAI</a></em>, 2018.
+              <br>
+              <em>Women in ML (WiML) Workshop, NeurIPS </em>, 2018.
+              <br> 
+              <a href="https://arushijain94.github.io/data/RL-UAI18_paper_7-2.pdf">paper</a>
+              /              /
+              <a href="https://arushijain94.github.io/data/UAI_Workshop__Talk.pdf">slides</a>
+              /              
+              <a href="https://arushijain94.github.io/data/PosterUAI2018___Safe_Actor_Critic_Workshop">poster</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/rldm.png" alt="3DSP" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Safe Hierarchical Policy Optimization using Constrained Return Variance in Options</papertitle>
+              <br>
+              <strong>Arushi Jain*</strong>, Doina Precup
+              <br>
+              <em><a href="https://rldm.org/">RLDM</a></em>, 2019.
+              <br>
+              <a href="https://arushijain94.github.io/data/RLDM_CameraReady.pdf">paper</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/safe_oc_trajectory.png" alt="3DSP" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Learning Options using Constrained Return Variance</papertitle>
+              <br>
+              <strong>Arushi Jain*</strong>, Doina Precup
+              <br>
+              <em><a href="https://sites.google.com/view/neurips19-safe-robust-workshop">Safety and Robustness in Decision Making Workshop</a> , NeurIPS</em>, 2019.
+              <br>
+              <a href="https://arushijain94.github.io/data/safety_robustness_neurips.pdf">paper</a>
+              /
+              <a href="https://arushijain94.github.io/data/safety_robustness_neurips_poster.pdf">poster</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/gsais.png" alt="3DSP" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Safe Policy Learning with Constrained Return Variance</papertitle>
+              <br>
+              <strong>Arushi Jain*</strong>
+              <br>
+              <em><a href="https://www.caiac.ca/en/conferences/canadianai-2019/program">Graduate Student AI Symposium</a>, Canadian AI Conference</em>, 2019.
+              <br>
+              <em>Proceeding published in LNAI Series by Springer Verlag.</em>
+              <br>
+              <a href="https://arushijain94.github.io/data/GSAIS_2019_CameraReady.pdf">paper</a>
+              /
+              <a href="https://arushijain94.github.io/data/GSAIS_talk.pdf">talk</a>
+            </td>
+          </tr>
+
         </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:center;font-size:small;">
+                  Source code and style from  <a href="https://jonbarron.info/">Jon Barron's website.</a>
+                </p>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
       </td>
     </tr>
   </tbody></table>

@@ -129,3 +129,102 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Timeline Section */
+/* ====== Timeline Styling ====== */
+/* ====== Compact Timeline Styling ====== */
+.timeline {
+  position: relative;
+  max-width: 700px; /* Reduced width for compact look */
+  margin: 20px auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 18px; /* Adjusted to align better with dots */
+  width: 3px;
+  height: 100%;
+  background-color: #007acc; /* Blue line */
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 12px; /* Reduced spacing */
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  width: 12px; /* Smaller circle */
+  height: 12px;
+  background-color: white;
+  border: 2px solid #007acc;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-date {
+  width: 100px; /* Reduced width */
+  padding-right: 12px; /* Less padding */
+  font-size: 13px; /* Smaller font size */
+  color: #007acc;
+  text-align: right;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+.timeline-content {
+  background-color: white;
+  padding: 10px 16px; /* Smaller padding for compact look */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  position: relative;
+  width: calc(100% - 120px);
+  transition: all 0.2s ease;
+}
+
+/* Heading inside content */
+.timeline-content h3 {
+  font-size: 16px; /* Slightly smaller */
+  margin: 0;
+  color: #007acc;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+.timeline-content p {
+  margin: 3px 0 0;
+  font-size: 13px; /* Smaller font size */
+  color: #555;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+/* Hover effect */
+.timeline-item:hover::before {
+  background-color: #f09228;
+  border-color: #f09228;
+}
+
+.timeline-content:hover {
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* Stronger shadow on hover */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  .timeline-content {
+    width: 100%;
+  }
+}
+

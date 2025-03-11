@@ -129,3 +129,146 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Timeline Section */
+/* ====== Timeline Styling ====== */
+/* ====== Timeline Styling ====== */
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%; /* Center the vertical line */
+  width: 3px;
+  height: 100%;
+  background-color: #ff5e5e;
+  transform: translateX(-50%);
+}
+
+/* Base Styling for Timeline Items */
+.timeline-item {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  width: 50%; /* Ensure consistent width for left and right alignment */
+  box-sizing: border-box;
+}
+
+/* Circles - Aligned Properly */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border: 2px solid #ff5e5e;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Left-aligned items */
+.timeline-item.left {
+  left: 0;
+  padding-right: 30px; /* Increased padding to add more gap */
+  text-align: right;
+}
+
+.timeline-item.left::before {
+  right: -12px; /* Ensure circle is aligned with the line */
+}
+
+/* Right-aligned items */
+.timeline-item.right {
+  left: 50%;
+  justify-content: flex-start;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.timeline-item.right::before {
+  left: -9px;
+}
+
+/* Timeline Content Styling */
+.timeline-content {
+  background-color: #fafafa;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  font-size: 14px;
+  width: 90%; /* Consistent width for both left and right sides */
+}
+
+.timeline-content h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0;
+}
+
+/* Hover effect */
+.timeline-item:hover .timeline-content {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for Date */
+.timeline-date {
+  color: #ff5e5e;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+
+/* Host Styling */
+.host-info {
+  color: #ff5e5e;
+  font-size: 12px;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+/* Responsive Fix */
+@media (max-width: 400px) {
+  .timeline-item {
+    width: 100%; /* Full width for mobile view */
+    left: 0;
+    padding-left: 30px;
+    padding-right: 0;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .timeline-item.left {
+    left: 0;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item::before {
+    left: 12px;
+  }
+}
+
